@@ -1,0 +1,15 @@
+CAS
+
+~ Compare And Set/Swap
+~ cas(V,Expected,NewValue)
+ - if V==E
+   V == New
+   otherwise try again or fail
+ - CPUy源于支持
+
+~ 容易引发ABA问题
+ - 解决方法：加version对比
+
+ - 如果基础类型，无所谓
+ - 如果是引用类型，你的女朋友和你复合，但是你不会知道分开这段时间，她经历了多少其他的男人，沧海桑田物是人非
+
