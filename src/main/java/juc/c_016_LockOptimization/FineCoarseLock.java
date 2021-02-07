@@ -1,4 +1,4 @@
-package juc.c_016;
+package juc.c_016_LockOptimization;
 
 import lombok.extern.slf4j.Slf4j;
 
