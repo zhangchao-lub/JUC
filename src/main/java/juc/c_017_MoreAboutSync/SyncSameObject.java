@@ -1,4 +1,4 @@
-package juc.c_017;
+package juc.c_017_MoreAboutSync;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
  */
 
 @Slf4j
-public class T {
+public class SyncSameObject {
     /*final*/ Object o=new Object();
 
     void m(){
@@ -31,7 +31,7 @@ public class T {
     }
 
     public static void main(String[] args) {
-        T t=new T();
+        SyncSameObject t=new SyncSameObject();
         //启动第一个线程
         new Thread(t::m,"t1").start();
 
