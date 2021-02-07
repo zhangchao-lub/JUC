@@ -1,4 +1,4 @@
-package juc.c_013;
+package juc.c_012_Volatile;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,7 +13,7 @@ import java.util.List;
  *             运行下面的程序，并分析结果
  */
 @Slf4j
-public class T {
+public class T04_VolatileNotSync {
     volatile int count=0; //并不能保证原子性
     void m(){
         for(int i=0;i<10000;i++){
@@ -22,7 +22,7 @@ public class T {
     }
 
     public static void main(String[] args) {
-        T t=new T();
+        T04_VolatileNotSync t=new T04_VolatileNotSync();
 
         List<Thread> threads=new ArrayList<>();
 
