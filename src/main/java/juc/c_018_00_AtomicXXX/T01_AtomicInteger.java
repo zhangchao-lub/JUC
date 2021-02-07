@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @version 1.0
  * @Date 2021/1/27 9:40
  * @descrption 解决同样的问题的更高效的方法，使用AtomXXX类
- *             AtomXXX类本身方法都是原子性的，但不能保证第一个方法连续调用是原子性的
+ *             AtomXXX类本身方法都是原子性的，但不能保证多个方法连续调用是原子性的
  */
 @Slf4j
 public class T01_AtomicInteger {
