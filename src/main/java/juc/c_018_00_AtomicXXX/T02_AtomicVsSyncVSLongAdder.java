@@ -10,7 +10,11 @@ import java.util.concurrent.atomic.LongAdder;
 
 /**
  * @author czhang@mindpointeye.com
- * @version 1.0
+
+
+
+
+
  * @Date 2021/1/27 9:40
  * @descrption 比较
  */
@@ -19,7 +23,7 @@ public class T02_AtomicVsSyncVSLongAdder {
     /*volatile*/ int count = 0; //并不能保证原子性
     static AtomicLong count1 = new AtomicLong(0L);
     static long count2 = 0L;
-    static LongAdder count3 = new LongAdder();
+    static LongAdder count3 = new LongAdder();//分段锁
 
     public static void main(String[] args) throws InterruptedException {
         Thread[] threads = new Thread[1000];
